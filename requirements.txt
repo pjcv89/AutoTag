@@ -1,0 +1,4 @@
+pandas>=0.25
+wordcloud
+kaggle
+fasttext

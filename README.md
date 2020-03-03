@@ -31,10 +31,10 @@ The following files are provided:
 - ``requirements.txt``: Text file with the required Python libraries.
 - ``install_starspace.sh``: The shell script to install StarSpace (CLI tool), based on its [documentation]([https://github.com/facebookresearch/StarSpace](https://github.com/facebookresearch/StarSpace)).
 - ``install_fasttext.sh``: The shell script to install fastText (CLI tool) using **cmake**, based on its [documentation]([https://github.com/facebookresearch/fastText#building-fasttext-using-cmake](https://github.com/facebookresearch/fastText#building-fasttext-using-cmake)).
-- ``Model_Building.ipynb``: The development Notebook used for this tutorial and required to reproduce the results.
+- ``Model_Building.ipynb``: The development notebook used for this tutorial and required to reproduce the results.
 
 After running the notebook, the following folders will be created:
-- */stacksample*: It will contain the  ``Questions.csv`` and ``Tags.csv`` tables downloaded via the Kaggle API after executing the notebook ``Project.ipynb``.
+- */stacksample*: It will contain the  ``Questions.csv`` and ``Tags.csv`` tables downloaded via the Kaggle API after executing the notebook.
 - */data*: It will contain the ``train``,``valid``, and ``test`` text files required for both fastText and StarSpace.
 - */models*: It will contain the fastText and StarSpace model files.
 - */predictions*: It will contain raw and processed text files with predictions for the test data, after inference with fastText and StarSpace.

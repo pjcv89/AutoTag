@@ -44,3 +44,14 @@ After running the notebook, the following folders will be created:
 - */predictions*: It will contain raw and processed text files with predictions for the test data, after inference with fastText and StarSpace.
 
 Additionally, you will require to download a Kaggle token (a `kaggle.json` file containing your Kaggle API credentials, more info. [here](https://github.com/Kaggle/kaggle-api)) so you can copy and paste the credentials to declare environment variables inside the notebook and download the stacksample data.
+
+## References
+
+1. fastText related papers:
+
+- [Bag of Tricks for Efficient Text Classification](https://arxiv.org/abs/1607.01759)
+- [Enriching Word Vectors with Subword Information](https://arxiv.org/abs/1607.04606)
+- [FastText.zip: Compressing text classification models] (https://arxiv.org/abs/1612.03651)
+
+2. StarSpace paper:
+- [StarSpace: Embed All The Things!](https://arxiv.org/abs/1709.03856)

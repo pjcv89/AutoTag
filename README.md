@@ -43,4 +43,4 @@ After running the notebook, the following folders will be created:
 - */models*: It will contain the fastText and StarSpace model files.
 - */predictions*: It will contain raw and processed text files with predictions for the test data, after inference with fastText and StarSpace.
 
-Additionally, you will require to download a Kaggle token (a `kaggle.json` file containing your Kaggle API credentials, more info [here](https://github.com/Kaggle/kaggle-api)) so you can copy and paste the credentials to declare environment variables inside the notebook and download the stacksample data.
+Additionally, you will require to download a Kaggle token (a `kaggle.json` file containing your Kaggle API credentials, more info. [here](https://github.com/Kaggle/kaggle-api)) so you can copy and paste the credentials to declare environment variables inside the notebook and download the stacksample data.

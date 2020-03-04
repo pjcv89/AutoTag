@@ -4,6 +4,5 @@ sklearn
 matplotlib
 nltk
 wordcloud
-conan
 kaggle
 fasttext

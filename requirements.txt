@@ -1,4 +1,9 @@
+numpy
 pandas>=0.25
+sklearn
+matplotlib
+nltk
 wordcloud
+conan
 kaggle
 fasttext

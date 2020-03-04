@@ -4,9 +4,12 @@
 
 ### By: Pablo Campos Viana
 
+## Overview
+This tutorial shows how to perform multi-label classification with fastText and StarSpace. We will use the [stacksample](https://www.kaggle.com/stackoverflow/stacksample) data to perform automatic tag generation. More precisely, given (short) text of questions titles, we want to predict their most probable tags. 
+
 ## Requirements
 
-This tutorial assumes a standard installation of [Anaconda](http://continuum.io/downloads) (based on Python 3.5) that is ready to use, running on a Linux system. Ideally you should be able to follow this tutorial using a Docker container.
+This tutorial assumes a standard installation of [miniconda](https://docs.conda.io/en/latest/miniconda.html) (based on Python 3.7) that is ready to use, running on a Linux system. Ideally you should be able to follow this tutorial using a Docker container.
 
 The following tools are required:
 
@@ -34,8 +37,10 @@ The following files are provided:
 
 After running the notebook, the following folders will be created:
 - */stacksample*: It will contain the  ``Questions.csv`` and ``Tags.csv`` tables downloaded via the Kaggle API after executing the notebook.
-- */data*: It will contain the ``train``,``valid``, and ``test`` text files required for both fastText and StarSpace.
+- */Starspace*: It will contain the Starspace's repo. files.
+- */fastText*: It will contain the fastText's repo. files.
+- */data*: It will contain the ``train``,``valid``, and ``test`` text files in the appropiate format required for both fastText and StarSpace. Also the ``train_weighted`` file to perform training with label weights with StarSpace. 
 - */models*: It will contain the fastText and StarSpace model files.
 - */predictions*: It will contain raw and processed text files with predictions for the test data, after inference with fastText and StarSpace.
 
-Additionally, you will require to download a Kaggle token (a `kaggle.json` file containing your Kaggle API credentials, more info [here](https://github.com/Kaggle/kaggle-api)) so you can copy and paste the credentials to declare environment variables inside the notebook and download the [stacksample](https://www.kaggle.com/stackoverflow/stacksample) data.
+Additionally, you will require to download a Kaggle token (a `kaggle.json` file containing your Kaggle API credentials, more info [here](https://github.com/Kaggle/kaggle-api)) so you can copy and paste the credentials to declare environment variables inside the notebook and download the stacksample data.

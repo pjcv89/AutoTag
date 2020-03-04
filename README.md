@@ -18,7 +18,7 @@ The following tools are required:
 
 Apart from the basic stack (numpy, pandas, scikit-learn, matplotlib) the following Python libraries are required (included in the `requirements.txt` file).
  
-- [nltk](https://pypi.org/project/nltk/) (or higher)
+- [nltk](https://pypi.org/project/nltk/)
 - [wordcloud](https://pypi.org/project/wordcloud/)
 -  [Kaggle API](https://pypi.org/project/kaggle/)
 - [fastText](https://pypi.org/project/fasttext/)

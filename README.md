@@ -14,7 +14,6 @@ The following tools are required:
 - g++
 - make
 - cmake
-- zip
 - unzip
 
  Additionally the following Python libraries are required (included in the `requirements.txt` file.

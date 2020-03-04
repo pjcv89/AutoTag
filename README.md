@@ -5,7 +5,7 @@
 ### By: Pablo Campos Viana
 
 ## Overview
-This tutorial shows how to perform multi-label classification with fastText and StarSpace. We will use the [stacksample](https://www.kaggle.com/stackoverflow/stacksample) data to perform automatic tag generation. More precisely, given (short) text of questions titles, we want to predict their most probable tags. 
+This tutorial shows how to perform multi-label classification with two [Facebook AI Research](https://ai.facebook.com/)'s tools [fastText](https://fasttext.cc/) and [StarSpace](https://research.fb.com/downloads/starspace/). We will use the [stacksample](https://www.kaggle.com/stackoverflow/stacksample) data to perform automatic tag generation. More precisely, given (short) text of questions titles, we want to predict their most probable tags. 
 
 ## Requirements
 

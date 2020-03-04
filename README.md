@@ -16,9 +16,9 @@ The following tools are required:
 - cmake
 - unzip
 
- Additionally the following Python libraries are required (included in the `requirements.txt` file.
+Apart from the basic stack (numpy, pandas, scikit-learn, matplotlib) the following Python libraries are required (included in the `requirements.txt` file).
  
--  [pandas 0.25](https://pandas.pydata.org/pandas-docs/stable/) (or higher)
+- [nltk](https://pypi.org/project/nltk/) (or higher)
 - [wordcloud](https://pypi.org/project/wordcloud/)
 -  [Kaggle API](https://pypi.org/project/kaggle/)
 - [fastText](https://pypi.org/project/fasttext/)

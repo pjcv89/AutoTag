@@ -35,17 +35,36 @@ The following files are provided:
 - ``install_fasttext.sh``: The shell script to install fastText (CLI tool) using **cmake**, based on its [documentation]([https://github.com/facebookresearch/fastText#building-fasttext-using-cmake](https://github.com/facebookresearch/fastText#building-fasttext-using-cmake)).
 - ``Models.ipynb``: The development notebook used for this tutorial and required to reproduce the results.
 
-After running the notebook, the following folders will be created:
-- */stacksample*: It will contain the  ``Questions.csv`` and ``Tags.csv`` tables downloaded via the Kaggle API after executing the notebook.
-- */Starspace*: It will contain the Starspace's repo. files.
-- */fastText*: It will contain the fastText's repo. files.
-- */data*: It will contain the ``train``,``valid``, and ``test`` text files in the appropiate format required for both fastText and StarSpace. Also the ``train_weighted`` file to perform training with label weights with StarSpace. 
-- */models*: It will contain the fastText and StarSpace model files.
-- */predictions*: It will contain raw and processed text files with predictions for the test data, after inference with fastText and StarSpace.
+After executing the aforementioned installation shell scripts, the following folders will be present:
+- */Starspace*: It contains the Starspace's repo. files.
+- */fastText*: It contains the fastText's repo. files.
+
+While running the notebook, the following folders will be created:
+- */stacksample*: It contains the  ``Questions.csv`` and ``Tags.csv`` tables downloaded via the Kaggle API after executing the notebook.
+- */data*: It contains the ``train``,``valid``, and ``test`` text files in the appropiate format required for both fastText and StarSpace. Also the ``train_weighted`` file to perform training with label weights with StarSpace. 
+- */models*: It contains the fastText and StarSpace model files.
+- */predictions*: It contains raw and processed text files with predictions for the test data, after inference with fastText and StarSpace.
 
 Additionally, you will require to download a Kaggle token (a `kaggle.json` file containing your Kaggle API credentials, more info. [here](https://github.com/Kaggle/kaggle-api)) so you can copy and paste the credentials to declare environment variables inside the notebook and download the stacksample data.
 
-## References
+## Structure of the notebook
+
+The notebook is organized as follows.
+
+1. Getting the data
+2. Preparing the data
+3. (Quick) Data exploration and visualization
+4. Processing the data
+5. Creating training, validation and test sets
+6. Building the models
+	1. fastText: baseline
+	2. fastText: tuned model
+	3. StarSpace: no label weights
+	4. StarSpace: label weights
+7. Model evaluation
+
+Please note that the aim of this tutorial is to show how to use fastText and StarSpace, so you should focus on parts 6 and 7.
+## Resources
 
 - fastText related papers:
 

@@ -52,6 +52,7 @@ Additionally, you will require to download a Kaggle token (a `kaggle.json` file 
 1. [Bag of Tricks for Efficient Text Classification](https://arxiv.org/abs/1607.01759)
 2. [Enriching Word Vectors with Subword Information](https://arxiv.org/abs/1607.04606)
 3. [FastText.zip: Compressing text classification models](https://arxiv.org/abs/1612.03651)
+4. [Misspelling Oblivious Word Embeddings](https://arxiv.org/abs/1905.09755)
 
 - StarSpace paper:
 1. [StarSpace: Embed All The Things!](https://arxiv.org/abs/1709.03856)

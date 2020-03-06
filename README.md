@@ -27,7 +27,7 @@ Apart from the basic scientific stack (numpy, pandas, scikit-learn, matplotlib, 
 
 ## Usage 
 
-**Docker users**: If you will be using the [Docker image](https://hub.docker.com/r/pjcv89/autotag), make sure you have [Docker]([https://www.docker.com/get-started](https://www.docker.com/get-started)) installed in your machine and just run the following command in your terminal to pull and run the latest version of the image.
+**Docker users**: If you will be using the [Docker image](https://hub.docker.com/r/pjcv89/autotag), make sure you have [Docker](https://www.docker.com/get-started) installed in your machine and just run the following command in your terminal to pull and run the latest version of the image.
 
 ```bash
 docker run -p 8080:8888 pjcv89/autotag

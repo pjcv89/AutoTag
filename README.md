@@ -19,14 +19,20 @@ The following tools are required:
 - [cmake]([https://cmake.org/](https://cmake.org/))
 - unzip
 
-Apart from the basic scientific stack (numpy, pandas, scikit-learn, matplotlib) the following Python libraries are required (included in the `requirements.txt` file).
+Apart from the basic scientific stack (numpy, pandas, scikit-learn, matplotlib, and of course, [jupyter]([https://pypi.org/project/jupyter/](https://pypi.org/project/jupyter/)) the following Python libraries are required (included in the `requirements.txt` file).
  
 - [nltk](https://pypi.org/project/nltk/)
 - [wordcloud](https://pypi.org/project/wordcloud/)
 -  [Kaggle API](https://pypi.org/project/kaggle/)
 
+## Usage 
 
-**Docker users**: If you are following this tutorial using the [Docker image]([https://hub.docker.com/r/pjcv89/autotag](https://hub.docker.com/r/pjcv89/autotag)) provided, you are ready.
+**Docker users**: If you will be using the [Docker image]([https://hub.docker.com/r/pjcv89/autotag](https://hub.docker.com/r/pjcv89/autotag)), make sure you have [Docker]([https://www.docker.com/get-started](https://www.docker.com/get-started)) installed in your machine and just run the following command in your terminal to pull and run the latest version of the image.
+
+```bash
+docker run -p 8080:8888 pjcv89/autotag
+```
+A notebook instance will be launched and you can go to [http://localhost:8080/](http://localhost:8080/) to use it. You should copy the token displayed in the command line and paste it in the jupyter welcome page.
 
 **Local-mode users**:  You will need to install the requirements by yourself.  You can follow the commands shown below in your terminal once you have chosen a working directory.
 
@@ -44,6 +50,8 @@ chmod u+x install_fasttext.sh install_starspace.sh
 ./install_fasttext.sh
 # StarSpace CLI installation
 ./install_starspace.sh
+# Launch notebook
+jupyter notebook
 ```
 
 ## Files and folders

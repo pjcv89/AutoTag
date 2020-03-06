@@ -41,7 +41,7 @@ A notebook instance will be launched and you can go to [http://localhost:8080/](
 apt-get update && apt-get -y install gcc g++ make cmake unzip
 # Clone this repo.
 git clone https://github.com/pjcv89/AutoTag.git && cd AutoTag
-# Install Phyton libraries
+# Install Python libraries
 pip install -r requirements.txt
 
 # Give execution permissions to installation scripts

@@ -5,7 +5,7 @@ RUN apt-get update \
 	&& apt-get -y install gcc g++ make cmake unzip
 
 RUN git clone https://github.com/pjcv89/AutoTag.git \
-	&& cd AutoTag && pip install -r requirements.txt 
+	&& cd AutoTag && pip install -r requirements.txt \
 	&& chmod u+x install_fasttext.sh install_starspace.sh \
 	&& ./install_fasttext.sh \
 	&& ./install_starspace.sh

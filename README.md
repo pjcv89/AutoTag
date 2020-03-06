@@ -26,7 +26,7 @@ Apart from the basic scientific stack (numpy, pandas, scikit-learn, matplotlib) 
 -  [Kaggle API](https://pypi.org/project/kaggle/)
 
 
-**Docker users**: If you are following this tutorial using the Docker image provided, you are ready.
+**Docker users**: If you are following this tutorial using the [Docker image]([https://hub.docker.com/r/pjcv89/autotag](https://hub.docker.com/r/pjcv89/autotag)) provided, you are ready.
 
 **Local-mode users**:  You will need to install the requirements by yourself.  You can follow the commands shown below in your terminal once you have chosen a working directory.
 

@@ -19,7 +19,7 @@ The following tools are required:
 - [cmake]([https://cmake.org/](https://cmake.org/))
 - unzip
 
-Apart from the basic scientific stack (numpy, pandas, scikit-learn, matplotlib, and of course, [jupyter]([https://pypi.org/project/jupyter/](https://pypi.org/project/jupyter/)) the following Python libraries are required (included in the `requirements.txt` file).
+Apart from the basic scientific stack (numpy, pandas, scikit-learn, matplotlib, and of course, [jupyter](https://pypi.org/project/jupyter/)) the following Python libraries are required (included in the `requirements.txt` file).
  
 - [nltk](https://pypi.org/project/nltk/)
 - [wordcloud](https://pypi.org/project/wordcloud/)

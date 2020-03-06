@@ -81,7 +81,7 @@ The notebook is organized as follows.
 
 1. Getting the data
 2. Preparing the data
-3. (Quick) Data exploration and visualization
+3. (Quick) Data exploration & visualization
 4. Processing the data
 5. Creating training, validation and test sets
 6. Building the models

@@ -50,6 +50,8 @@ chmod u+x install_fasttext.sh install_starspace.sh
 ./install_fasttext.sh
 # StarSpace CLI installation
 ./install_starspace.sh
+# Install jupyter if it isn't installed yet
+pip install jupyter
 # Launch notebook
 jupyter notebook
 ```

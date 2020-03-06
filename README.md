@@ -5,39 +5,59 @@
 ### By: Pablo Campos Viana
 
 ## Overview
-This tutorial shows how to perform multi-label classification with two [Facebook AI Research](https://ai.facebook.com/)'s tools: [fastText](https://fasttext.cc/) and [StarSpace](https://research.fb.com/downloads/starspace/). We will use the [stacksample](https://www.kaggle.com/stackoverflow/stacksample) data to perform automatic tag generation. More precisely, given (short) text of questions titles, we want to predict their most probable tags. 
+This tutorial shows how to perform [multi-label]([https://en.wikipedia.org/wiki/Multi-label_classification](https://en.wikipedia.org/wiki/Multi-label_classification)) text classification with two [Facebook AI Research](https://ai.facebook.com/)'s tools: [fastText](https://fasttext.cc/) and [StarSpace](https://research.fb.com/downloads/starspace/). We will use the [stacksample](https://www.kaggle.com/stackoverflow/stacksample) data to perform automatic tag generation. More precisely, given (short) text of questions titles, we want to predict their most probable tags. 
 
 ## Requirements
 
-This tutorial assumes a standard installation of [miniconda](https://docs.conda.io/en/latest/miniconda.html) (based on Python 3.7) that is ready to use, running on a Linux system. Ideally you should be able to follow this tutorial using a Docker container.
+This tutorial assumes a standard installation of [miniconda](https://docs.conda.io/en/latest/miniconda.html) (based on Python 3.7) that is ready to use, running on a Linux system.
 
 The following tools are required:
 
-- gcc
+- [gcc]([https://gcc.gnu.org/](https://gcc.gnu.org/))
 - g++
-- make
-- cmake
+- [make]([https://www.gnu.org/software/make/](https://www.gnu.org/software/make/))
+- [cmake]([https://cmake.org/](https://cmake.org/))
 - unzip
 
-Apart from the basic stack (numpy, pandas, scikit-learn, matplotlib) the following Python libraries are required (included in the `requirements.txt` file).
+Apart from the basic scientific stack (numpy, pandas, scikit-learn, matplotlib) the following Python libraries are required (included in the `requirements.txt` file).
  
 - [nltk](https://pypi.org/project/nltk/)
 - [wordcloud](https://pypi.org/project/wordcloud/)
 -  [Kaggle API](https://pypi.org/project/kaggle/)
-- [fastText](https://pypi.org/project/fasttext/)
+
+
+**Docker users**: If you are following this tutorial using the Docker image provided, you are ready.
+
+**Local-mode users**:  You will need to install the requirements by yourself.  You can follow the commands shown below in your terminal once you have chosen a working directory.
+
+```bash
+# Install tools
+apt-get update && apt-get -y install gcc g++ make cmake unzip
+# Clone this repo.
+git clone https://github.com/pjcv89/AutoTag.git && cd AutoTag
+# Install Phyton libraries
+pip install -r requirements.txt
+
+# Give execution permissions to installation scripts
+chmod u+x install_fasttext.sh install_starspace.sh
+# fastText CLI and Python API installation
+./install_fasttext.sh
+# StarSpace CLI installation
+./install_starspace.sh
+```
 
 ## Files and folders
 
 The following files are provided:
 
 - ``requirements.txt``: Text file with the required Python libraries.
-- ``install_starspace.sh``: The shell script to install StarSpace (CLI tool), based on its [documentation]([https://github.com/facebookresearch/StarSpace](https://github.com/facebookresearch/StarSpace)).
-- ``install_fasttext.sh``: The shell script to install fastText (CLI tool) using **cmake**, based on its [documentation]([https://github.com/facebookresearch/fastText#building-fasttext-using-cmake](https://github.com/facebookresearch/fastText#building-fasttext-using-cmake)).
+- ``install_starspace.sh``: The shell script to install StarSpace (CLI), based on its [documentation]([https://github.com/facebookresearch/StarSpace](https://github.com/facebookresearch/StarSpace)).
+- ``install_fasttext.sh``: The shell script to install fastText (CLI and Python API) using **cmake**, based on its [documentation]([https://github.com/facebookresearch/fastText#building-fasttext-using-cmake](https://github.com/facebookresearch/fastText#building-fasttext-using-cmake)).
 - ``Models.ipynb``: The development notebook used for this tutorial and required to reproduce the results.
 
-After executing the aforementioned installation shell scripts, the following folders will be present:
-- */Starspace*: It contains the Starspace's repo. files.
-- */fastText*: It contains the fastText's repo. files.
+After executing the installation scripts, the following folders will be present:
+- */Starspace*: It contains the Starspace's source code.
+- */fastText*: It contains the fastText's source code.
 
 While running the notebook, the following folders will be created:
 - */stacksample*: It contains the  ``Questions.csv`` and ``Tags.csv`` tables downloaded via the Kaggle API after executing the notebook.
@@ -64,6 +84,7 @@ The notebook is organized as follows.
 7. Model evaluation
 
 Please note that the aim of this tutorial is to show how to use fastText and StarSpace, so you should focus on parts 6 and 7.
+
 ## Resources
 
 - fastText related papers:
@@ -73,5 +94,10 @@ Please note that the aim of this tutorial is to show how to use fastText and Sta
 3. [FastText.zip: Compressing text classification models](https://arxiv.org/abs/1612.03651)
 4. [Misspelling Oblivious Word Embeddings](https://arxiv.org/abs/1905.09755)
 
+- Papers about techniques used in fastText to improve scalability and training time:
+
+1. [Hierarchical softmax based on the Huffman coding tree](https://arxiv.org/abs/1301.3781)
+2. [The hashing trick](https://arxiv.org/abs/0902.2206)
+	
 - StarSpace paper:
 1. [StarSpace: Embed All The Things!](https://arxiv.org/abs/1709.03856)

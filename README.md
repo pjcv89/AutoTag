@@ -27,12 +27,21 @@ Apart from the basic scientific stack (numpy, pandas, scikit-learn, matplotlib, 
 
 ## Usage 
 
-**Docker users**: If you will be using the [Docker image](https://hub.docker.com/r/pjcv89/autotag), make sure you have [Docker](https://www.docker.com/get-started) installed in your machine and just run the following command in your terminal to pull and run the latest version of the image.
+**Docker users**: If you will be using the [Docker image](https://hub.docker.com/r/pjcv89/autotag), make sure you have [Docker](https://www.docker.com/get-started) installed in your machine and just run the following command in your terminal to pull and run the latest version of the image. 
 
 ```bash
 docker run -p 8080:8888 pjcv89/autotag
 ```
-A notebook instance will be launched and you can go to [http://localhost:8080/](http://localhost:8080/) to use it. You should copy the token displayed in the command line and paste it in the jupyter welcome page.
+
+If you have some experience with Docker, you may want to give a name to your container with the `--name` flag and use a volume with the `-v` flag to transfer data between your machine and the container. More specifically, you may want to choose some model and persist its model file so you can use it in another context (local mode or another container, for example, to use it in a web application). Once you have chosen a working directory in your machine, you can run the following command in your terminal.
+
+```bash
+docker run --name myautotag -p 8080:8888 -v $PWD/persist:/AutoTag/persist pjcv89/autotag
+```
+
+Once inside the container and once you have generated the models, you can copy a model file from the  `/models` folder to the `/persist` folder and it will be copied to your machine.
+
+In either case, a notebook instance will be launched and you can go to [http://localhost:8080/](http://localhost:8080/) to use it. You should copy the token displayed in the command line and paste it in the jupyter welcome page.
 
 **Local-mode users**:  You will need to install the requirements by yourself.  You can follow the commands shown below in your terminal once you have chosen a working directory.
 

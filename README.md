@@ -39,7 +39,7 @@ If you have some experience with Docker, you may want to give a name to your con
 docker run --name myautotag -p 8080:8888 -v $PWD/persist:/AutoTag/persist pjcv89/autotag
 ```
 
-Once inside the container and once you have generated the models, you can copy a model file from the  `/models` folder to the `/persist` folder and it will be copied to your machine.
+Once inside the container and once you have generated the models, you can copy a model file from the  `/models` folder to the `/persist` folder and it will be copied to your machine in the `$PWD/persist` folder.
 
 In either case, a notebook instance will be launched and you can go to [http://localhost:8080/](http://localhost:8080/) to use it. You should copy the token displayed in the command line and paste it in the jupyter welcome page.
 

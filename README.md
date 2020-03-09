@@ -13,10 +13,10 @@ This tutorial assumes a standard installation of [miniconda](https://docs.conda.
 
 The following tools are required:
 
-- [gcc]([https://gcc.gnu.org/](https://gcc.gnu.org/))
+- [gcc](https://gcc.gnu.org/)
 - g++
-- [make]([https://www.gnu.org/software/make/](https://www.gnu.org/software/make/))
-- [cmake]([https://cmake.org/](https://cmake.org/))
+- [make](https://www.gnu.org/software/make/)
+- [cmake](https://cmake.org/)
 - unzip
 
 Apart from the basic scientific stack (numpy, pandas, scikit-learn, matplotlib, and of course, [jupyter](https://pypi.org/project/jupyter/)) the following Python libraries are required (included in the `requirements.txt` file).

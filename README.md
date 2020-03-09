@@ -113,10 +113,11 @@ Please note that the aim of this tutorial is to show how to use fastText and Sta
 3. [FastText.zip: Compressing text classification models](https://arxiv.org/abs/1612.03651)
 4. [Misspelling Oblivious Word Embeddings](https://arxiv.org/abs/1905.09755)
 
-- Papers about techniques used in fastText to improve scalability and training time:
+- Techniques used in fastText to improve scalability and training time:
 
 1. [Hierarchical softmax based on the Huffman coding tree](https://arxiv.org/abs/1301.3781)
 2. [The hashing trick](https://arxiv.org/abs/0902.2206)
-	
+3. [Hyperparameter autotuning for fastText](https://ai.facebook.com/blog/fasttext-blog-post-open-source-in-brief/)
+
 - StarSpace paper:
 1. [StarSpace: Embed All The Things!](https://arxiv.org/abs/1709.03856)

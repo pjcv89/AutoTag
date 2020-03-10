@@ -27,7 +27,7 @@ Apart from the basic scientific stack (numpy, pandas, scikit-learn, matplotlib, 
 
 ## Usage 
 
-**Docker users**: If you will be using the [Docker image](https://hub.docker.com/r/pjcv89/autotag), make sure you have [Docker](https://www.docker.com/get-started) installed in your machine and just run the following command in your terminal to pull and run the latest version of the image. 
+**Docker users**: If you will be using the [Docker image](https://hub.docker.com/r/pjcv89/autotag), you don't have to worry for any of the requirements, but make sure you have [Docker](https://www.docker.com/get-started) installed in your machine. Just run the following command in your terminal to pull and run the latest version of the image. 
 
 ```bash
 docker run -p 8080:8888 pjcv89/autotag
@@ -70,8 +70,8 @@ jupyter notebook
 The following files are provided:
 
 - ``requirements.txt``: Text file with the required Python libraries.
-- ``install_starspace.sh``: The shell script to install StarSpace (CLI), based on its [documentation]([https://github.com/facebookresearch/StarSpace](https://github.com/facebookresearch/StarSpace)).
-- ``install_fasttext.sh``: The shell script to install fastText (CLI and Python API) using **cmake**, based on its [documentation]([https://github.com/facebookresearch/fastText#building-fasttext-using-cmake](https://github.com/facebookresearch/fastText#building-fasttext-using-cmake)).
+- ``install_starspace.sh``: The shell script to install StarSpace (CLI), based on its [documentation](https://github.com/facebookresearch/StarSpace).
+- ``install_fasttext.sh``: The shell script to install fastText (CLI and Python API) using **cmake**, based on its [documentation](https://github.com/facebookresearch/fastText#building-fasttext-using-cmake).
 - ``Models.ipynb``: The development notebook used for this tutorial and required to reproduce the results.
 
 After executing the installation scripts, the following folders will be present:

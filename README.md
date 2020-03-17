@@ -33,7 +33,7 @@ Apart from the basic scientific stack (numpy, pandas, scikit-learn, matplotlib, 
 docker run -p 8080:8888 pjcv89/autotag
 ```
 
-If you have some experience with Docker, you may want to give a name to your container with the `--name` flag and use a volume with the `-v` flag to transfer data between your machine and the container. More specifically, you may want to choose some model and persist its model file so you can use it in another context (local mode or another container, for example, to use it in a web application). Once you have chosen a working directory in your machine, you can run the following command in your terminal.
+If you have some experience with Docker, you may want to give a name to your container with the `--name` flag and use a volume with the `-v` flag to transfer data between your machine and the container. More specifically, you may want to choose some model and persist its model file so you can use it in another context (local-mode or another container, for example, to use it in a web application). Once you have chosen a working directory in your machine, you can run the following command in your terminal.
 
 ```bash
 docker run --name myautotag -p 8080:8888 -v $PWD/persist:/AutoTag/persist pjcv89/autotag

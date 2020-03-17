@@ -72,7 +72,7 @@ The following files are provided:
 - ``requirements.txt``: Text file with the required Python libraries.
 - ``install_starspace.sh``: The shell script to install StarSpace (CLI), based on its [documentation](https://github.com/facebookresearch/StarSpace).
 - ``install_fasttext.sh``: The shell script to install fastText (CLI and Python API) using **cmake**, based on its [documentation](https://github.com/facebookresearch/fastText#building-fasttext-using-cmake).
-- ``Models.ipynb``: The development notebook used for this tutorial and required to reproduce the results.
+- ``Models.ipynb``: The development notebook used for this tutorial and required to reproduce the results. You can view the notebook with Jupyter Notebook Viewer [here](https://nbviewer.jupyter.org/github/pjcv89/AutoTag/blob/master/Models.ipynb).
 
 After executing the installation scripts, the following folders will be present:
 - */Starspace*: It contains the Starspace's source code.
